@@ -5,6 +5,7 @@ using System.Text;
 
 using System.Threading.Tasks;
 using System.IO;
+using System.Configuration;
 
 namespace Primeiro_Programa
 {
@@ -139,7 +140,19 @@ namespace Primeiro_Programa
         static void AlterarCliente()
         {
             //TODO: Ugo vai fazer essa função
-
+            Cabecalho("Alterar um cliente um");
+            Console.Write("Alterar nome.: ");
+            string nome = Console.ReadLine();
+            Console.Write("alterar Celular: ");
+            string celular = Console.ReadLine();
+            Console.Write("alterar e-mail: ");
+            string email = Console.ReadLine();
+            Console.Write("alterar Data de Nascimento: ");
+            string dtaNascimento = Console.ReadLine();
+            Console.Write("alterar Renda Anual...: ");
+            float rendaAnual = float.Parse(Console.ReadLine());
+            Console.Write("Ativo.........: ");
+            int ativo = int.Parse(Console.ReadLine());
         }
 
         static void ExcluirCliente()
