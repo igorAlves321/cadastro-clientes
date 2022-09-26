@@ -141,28 +141,7 @@ namespace Primeiro_Programa
         {
             //TODO: Ugo vai fazer essa função
             Cabecalho("Alterar um cliente 2");
-            Console.Write("Codigo: ");
-            int codigo = int.Parse(Console.ReadLine());
 
-            _cadastro.Remove(codigo);
-            
-            Console.WriteLine("\t\t Foi alterado");
-            Console.Write("digite o nome para alterar Nome: ");
-            string nome = Console.ReadLine();
-            Console.Write("alterar Celular.......: ");
-            string celular = Console.ReadLine();
-            Console.Write("e-mail........: ");
-            string email = Console.ReadLine();
-            Console.Write("Dta Nascimento: ");
-            string dtaNascimento = Console.ReadLine();
-            Console.Write("Renda Anual...: ");
-            float rendaAnual = float.Parse(Console.ReadLine());
-            Console.Write("Ativo.........: ");
-            int ativo = int.Parse(Console.ReadLine());
-            codigo = ObterNovoCodigoCliente();
-            string linhaCadastro = $"{codigo};{nome};{celular};{email};{dtaNascimento};{rendaAnual};{ativo}";
-            _cadastro.Add(codigo, linhaCadastro);
-            GravarDadosArquivo(linhaCadastro);
         }
 
         static void ExcluirCliente()
@@ -173,7 +152,7 @@ namespace Primeiro_Programa
             _cadastro.Remove(codigo);
 
             Console.WriteLine("\t\t Foi excluido");
-            
+
         }
 
         static void ConsultarTodosClientes()
