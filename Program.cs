@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using System.Threading.Tasks;
 using System.IO;
-using System.Configuration;
 
-namespace Primeiro_Programa
+namespace Alo_Mundo
 {
     internal class Program
     {
         static Dictionary<int, string> _cadastro = new Dictionary<int, string>();
         static string _fileName = @"c:\temp\csharp\cadastro.txt";
-
         static void Main(string[] args)
         {
             int opcao = 0;
@@ -140,19 +137,16 @@ namespace Primeiro_Programa
         static void AlterarCliente()
         {
             //TODO: Ugo vai fazer essa função
-            Cabecalho("Alterar um cliente 2");
 
         }
 
         static void ExcluirCliente()
         {
             Cabecalho("Excluir o cliente");
-            Console.Write("Codigo........: ");
+            Console.Write("Codigo: ");
             int codigo = int.Parse(Console.ReadLine());
             _cadastro.Remove(codigo);
-
             Console.WriteLine("\t\t Foi excluido");
-
         }
 
         static void ConsultarTodosClientes()
@@ -209,4 +203,7 @@ namespace Primeiro_Programa
             Console.ReadLine();
         }
     }
+
+
+
 }
