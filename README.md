@@ -3,7 +3,7 @@
 Linguagem Csharp.
 	Integrantes do grupo.
 
-Sergio Tadeu.
+Sergio Tadeu Dias.
 
 Sérgio Renato
 
