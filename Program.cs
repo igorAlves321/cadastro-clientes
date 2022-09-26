@@ -159,7 +159,7 @@ namespace Primeiro_Programa
             float rendaAnual = float.Parse(Console.ReadLine());
             Console.Write("Ativo.........: ");
             int ativo = int.Parse(Console.ReadLine());
-            int id = ObterNovoCodigoCliente();
+            codigo = ObterNovoCodigoCliente();
             string linhaCadastro = $"{codigo};{nome};{celular};{email};{dtaNascimento};{rendaAnual};{ativo}";
             _cadastro.Add(codigo, linhaCadastro);
             GravarDadosArquivo(linhaCadastro);
