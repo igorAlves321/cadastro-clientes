@@ -157,8 +157,11 @@ namespace Primeiro_Programa
 
         static void ExcluirCliente()
         {
-
-
+            Cabecalho("Excluir o cliente");
+            Console.Write("Codigo........: ");
+            int codigo = int.Parse(Console.ReadLine());
+            _cadastro.Remove(codigo);
+            Console.WriteLine("\t\t Foi excluido");
         }
 
         static void ConsultarTodosClientes()
@@ -214,5 +217,5 @@ namespace Primeiro_Programa
 
             Console.ReadLine();
         }
-}
+    }
 }
